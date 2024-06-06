@@ -53,13 +53,14 @@ body {
 }
 
 
-.marquee {
+/* .marquee {
   width: 1000%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   padding-top: 1.2em;
-}
+	overflow-x: hidden;
+} */
 
 .nav {
   width: 100%;
@@ -163,6 +164,11 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+@media(max-width: 900px){
+	.service{
+		flex-direction: column;
+	}
+}
 .service-info {
   flex: 2;
   width: 100%;
@@ -212,11 +218,6 @@ html.lenis body {
 
 
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
 
 
 
@@ -659,5 +660,14 @@ i {
 	.content--half {
 		width: 50%;
 	}
+
 }
 
+@media(max-width: 900px){
+	.service-info h1{
+		font-size: 2px;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
